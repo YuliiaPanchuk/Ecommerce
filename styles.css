@@ -1,0 +1,93 @@
+/*Creating nav bar*/
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  padding: 10px 100px;
+  box-sizing: border-box;
+  transition: 0.3s;
+  background-color: #dddddd;
+}
+nav .logo {
+  padding: 22px 20px;
+  height: 80px;
+  float: left;
+  font-size: 24px;
+  transition: 0.3s;
+}
+nav ul {
+  list-style: none;
+  float: right;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  line-height: 80px;
+  color: #151515;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+/*Log-in button*/
+nav ul li a:focus {
+  outline: none;
+}
+nav ul li a.active {
+  background: #fff48f;
+  color: #9ba4b4;
+  border-radius: 6px;
+}
+
+/*Body*/
+body{
+    margin: 0;
+}
+
+/*Footer*/
+footer{
+    background-color: #dddddd;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    position: relative;
+}
+.footerRights{
+    position: absolute;
+    bottom: 0;
+}
+.rights{
+    display: inline-block;
+}
+.social-container {
+  height: 100px;
+  width: 100%;
+  text-align: center;
+}
+
+.social-container a{
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    color: black;
+}
+.social-container i{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.content div{
+    background-color: #fcf9f9;
+    height: 250px;
+    width: 100%;
+}
