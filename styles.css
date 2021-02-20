@@ -1,6 +1,6 @@
 /*Creating nav bar*/
+                                    /*NEED TO CREATE HOVER WITH JAVASCRIPT*/
 nav {
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -12,7 +12,7 @@ nav {
 }
 nav .logo {
   padding: 22px 20px;
-  height: 80px;
+  height: 70px;
   float: left;
   font-size: 24px;
   transition: 0.3s;
@@ -45,22 +45,120 @@ nav ul li a.active {
   color: #9ba4b4;
   border-radius: 6px;
 }
+/*About*/
+
+.about{
+  height: 700px;
+}
+.about h1{
+  text-align: center;
+  
+}
+.about p{
+  text-align: left;
+  width: 500px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  margin-top: 90px;
+  margin-left: 75px;
+}
+.about img{
+}
+
+/*Intro*/
+.intro{
+  height: 700px;
+}
+/*Collection*/
+.collection h1 {
+  text-align: center; 
+  font-family: 'Darker Grotesque', sans-serif;
+  font-weight: 300;
+}
+.con {
+  display: flex;
+  justify-content: center;
+  
+}
+div.item {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 220px;
+  max-width: 310px;
+  width: 100%;
+  background: #000;
+  text-align: center;
+  box-shadow: 0 0 5px(rgba 0, 0, 0, 0.15);
+}
+div.item * {
+  box-sizing: border-box;
+}
+div.item img {
+  max-width: 100%;
+  vertical-align: top;
+  height: 210px;
+}
+div.item i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  font-size: 34px;
+  color: #000;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  background: #ffc125;
+}
+div.item a {
+  left: 0;
+  right:0;
+  top:0;
+  position:absolute;
+}
+
+div.item.red {
+  background-color: #e74c3c;
+}
+div.item.red i {
+  color: #e74c3c;
+}
+
+div.item:hover img {
+  opacity: 0.3;
+  filter: grayscale(100%);
+}
+div.item * {
+  transition: all 0.5s ease-in-out;
+}
+
+div.item i {
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 300ms 0ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+div.item:hover i {
+transform: translate(-50%, -50%) scale(1);
+transition: transform 300ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
 
 /*Body*/
 body{
-    margin: 0;
+  margin: 0;
 }
 
 /*Footer*/
 footer{
-    background-color: #dddddd;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 150px;
-    position: relative;
+  background-color: #dddddd;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  position: relative;
 }
 .footerRights{
     position: absolute;
@@ -69,6 +167,8 @@ footer{
 .rights{
     display: inline-block;
 }
+
+                                /*NEED TO CREATE HOVER WITH JAVASCRIPT*/
 .social-container {
   height: 100px;
   width: 100%;
@@ -82,12 +182,133 @@ footer{
     color: black;
 }
 .social-container i{
-    padding-left: 10px;
-    padding-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .content div{
     background-color: #fcf9f9;
-    height: 250px;
     width: 100%;
 }
+
+/*Contact form*/
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
+
+.contactForm {
+	font-family:"Open Sans", Helvetica, Arial, sans-serif;
+	font-weight:300;
+	font-size: 12px;
+	line-height:30px;
+	color:#777;
+	background-color:#232323;
+	/*background-image: 'images/contactPicture.jpg';*/
+	/*adjust to the background*/
+  /*background-size: cover;*/
+ padding:80px 0;
+}
+
+.container {
+	max-width:400px;
+	width:100%;
+	margin:0 auto;
+}
+
+#contact input[type="text"], 
+#contact input[type="email"], 
+#contact input[type="tel"], 
+#contact input[type="url"], 
+#contact textarea, 
+#contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+
+#contact {
+	background:fade(#F9F9F9,85);
+	padding:25px;
+}
+
+#contact h3 {
+	color: #000;
+	display: block;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+#contact h4 {
+	margin:5px 0 15px;
+	display:block;
+	font-size:13px;
+}
+
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+#contact input[type="text"], 
+#contact input[type="email"], 
+#contact input[type="tel"], 
+#contact input[type="url"], 
+#contact textarea {
+	width:100%;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,
+#contact textarea:hover {
+	transition:border-color 0.3s ease-in-out;
+	border:1px solid #AAA;
+}
+
+#contact textarea {
+	height:100px;
+	max-width:100%;
+  resize:none;
+}
+
+#contact button[type="submit"] {
+	cursor:pointer;
+	width:100%;
+	border:none;
+	background:#000;
+	color:#FFF;
+	margin:0 0 5px;
+	padding:25px 10px;
+	font-size:15px;
+	text-transform: uppercase;
+}
+
+#contact button[type="submit"]:hover {
+	background:#fff48f;
+	transition:background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#contact input:focus, #contact textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+
+label.error{
+	color: darkred;
+	padding-left: 10px;
+	font-weight: bold;
+}
+input.error{
+	border-color: darkred !important;
+}
+
